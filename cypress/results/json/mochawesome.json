@@ -1,0 +1,225 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 5,
+    "failures": -4,
+    "start": "2021-08-15T16:14:55.269Z",
+    "end": "2021-08-15T16:15:22.214Z",
+    "duration": 26945,
+    "testsRegistered": 7,
+    "passPercent": 50,
+    "pendingPercent": 71.42857142857143,
+    "other": 5,
+    "hasOther": true,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "a02c585b-65dd-4def-80cf-30aef9aa7e93",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+          "title": "login user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should try to log in the user",
+              "fullTitle": "login user should try to log in the user",
+              "timedOut": null,
+              "duration": 10699,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fillUsername(_credentials.env.user.username);\nloginPage.fillPassword(_credentials.env.user.password);\nloginPage.submit();\nloginPage.errorMessageElement.should('contain', \"No account found with that username.\");",
+              "err": {},
+              "uuid": "109fd0ae-1c3a-4512-b883-9465e8a7ff9e",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should check all page elements",
+              "fullTitle": "login user should check all page elements",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "7e3d78d5-73a6-437f-9d33-0504e1029d0a",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error when username and password are empty",
+              "fullTitle": "login user should show error when username and password are empty",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "9235831f-b815-4e47-b65a-357d1fc422ca",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error invalid username",
+              "fullTitle": "login user should show error invalid username",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "368dfe52-c8e9-44d4-9297-f9bafec16b2c",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error email is required field",
+              "fullTitle": "login user should show error email is required field",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d7e00599-1f0b-487b-9d41-d29227ad1e36",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error password is required field",
+              "fullTitle": "login user should show error password is required field",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "2dd3fa60-ee48-4553-b10d-8bc88295f7c3",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should a test-case that will fail because of unsuccessful login",
+              "fullTitle": "login user should a test-case that will fail because of unsuccessful login",
+              "timedOut": null,
+              "duration": 5998,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\login.spec.js\\\\login user -- should a test-case that will fail because of unsuccessful login (failed).png\"\n}",
+              "code": "loginPage.fillUsername(_credentials.env.user.username);\nloginPage.fillPassword(_credentials.env.user.password);\nloginPage.submit();\nloginPage.errorMessageElement.should('not.be.visible', 'No account found with that username.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span.help-block>' not to be 'visible'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span.help-block>' not to be 'visible'\n    at Context.eval (https://www.pecodesoftware.com/__cypress/tests?p=cypress\\integration\\login.spec.js:209:35)",
+                "diff": null
+              },
+              "uuid": "465eae6f-8a47-4cdd-af83-91fe11f4aec3",
+              "parentUUID": "89ab2ea3-d227-43ec-9553-3c70c72de862",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "109fd0ae-1c3a-4512-b883-9465e8a7ff9e"
+          ],
+          "failures": [
+            "465eae6f-8a47-4cdd-af83-91fe11f4aec3"
+          ],
+          "pending": [
+            "7e3d78d5-73a6-437f-9d33-0504e1029d0a",
+            "9235831f-b815-4e47-b65a-357d1fc422ca",
+            "368dfe52-c8e9-44d4-9297-f9bafec16b2c",
+            "d7e00599-1f0b-487b-9d41-d29227ad1e36",
+            "2dd3fa60-ee48-4553-b10d-8bc88295f7c3"
+          ],
+          "skipped": [],
+          "duration": 16697,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
